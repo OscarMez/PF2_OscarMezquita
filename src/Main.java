@@ -28,7 +28,7 @@ public class Main {
         // Iniciar tots els fils
         for (Avio a : avions) a.start();
 
-        // Thread meteorologia (daemon): cada 8..14 s canvia condició i ajusta pistes utilitzables
+        // Fil de meteorologia
         Thread meteorologia = new Thread(() -> {
             String[] conds = {"NORMAL", "BOIRA", "VENT", "TEMPESTA"};
             while (true) {
