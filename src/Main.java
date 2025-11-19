@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Simulador aeroport - pràctica de fils (versió Semaphore amb meteorologia)");
+        System.out.println("Simulador aeroport");
 
         int numAvions = demanarEnter(sc, "Nombre total d'avions (mínim 10): ", 10);
         int numPistes = demanarEnter(sc, "Nombre de pistes disponibles (mínim 2): ", 2);
